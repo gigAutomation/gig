@@ -1,0 +1,25 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "Cypress with dashboard service ",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run-dashboard": "cypress run --record --key 5e53e7f7-cb15-4f68-afaf-671a1470ed47"
+  },
+  "keywords": [
+    "cypress",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.4.1"
+  },
+  "devDependencies": {
+    "cypress": "^9.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-wait-until": "^1.7.2"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 1,
+    "pending": 0,
+    "failures": 3,
+    "start": "2021-09-16T17:24:05.872Z",
+    "end": "2021-09-16T17:24:34.542Z",
+    "duration": 28670,
+    "testsRegistered": 4,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e5ec1301-5481-4289-abfa-6a3925f096ab",
+      "title": "",
+      "fullFile": "cypress/integration/TravelOutbound/CheckValidationAR.js",
+      "file": "cypress/integration/TravelOutbound/CheckValidationAR.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4506d9a9-1e2e-4c31-8359-bda748d76c1e",
+          "title": "Basic Information JO",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open URL",
+              "fullTitle": "Basic Information JO open URL",
+              "timedOut": null,
+              "duration": 14784,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://oneit.website/Outbound-Travel-Insurance-Request');",
+              "err": {},
+              "uuid": "31b5da5d-293a-4759-a788-84da244a5e41",
+              "parentUUID": "4506d9a9-1e2e-4c31-8359-bda748d76c1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that nationality field name should be (الجنسية)",
+              "fullTitle": "Basic Information JO Verify that nationality field name should be (الجنسية)",
+              "timedOut": null,
+              "duration": 4638,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('').should('be.visible').and('contain', 'الجنسية');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: ``, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: ``, but never found it.\n    at Context.eval (https://oneit.website/__cypress/tests?p=cypress\\integration\\TravelOutbound\\CheckValidationAR.js:105:16)",
+                "diff": null
+              },
+              "uuid": "f28a7538-d194-4e55-88c5-30bdafbeed3b",
+              "parentUUID": "4506d9a9-1e2e-4c31-8359-bda748d76c1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that should be star beside name",
+              "fullTitle": "Basic Information JO Verify that should be star beside name",
+              "timedOut": null,
+              "duration": 4522,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ctl00_ContentPlaceHolder1_rfvddlNationality').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ctl00_ContentPlaceHolder1_rfvddlNationality`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ctl00_ContentPlaceHolder1_rfvddlNationality`, but never found it.\n    at Context.eval (https://oneit.website/__cypress/tests?p=cypress\\integration\\TravelOutbound\\CheckValidationAR.js:108:59)",
+                "diff": null
+              },
+              "uuid": "da79d5ec-9e1f-41de-82ad-5d17fa29ee9f",
+              "parentUUID": "4506d9a9-1e2e-4c31-8359-bda748d76c1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that should be star with color red beside name",
+              "fullTitle": "Basic Information JO Verify that should be star with color red beside name",
+              "timedOut": null,
+              "duration": 4560,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ctl00_ContentPlaceHolder1_rfvddlNationality').should('have.attr', 'class', 'color:Red;visibility:hidden;');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ctl00_ContentPlaceHolder1_rfvddlNationality`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `ctl00_ContentPlaceHolder1_rfvddlNationality`, but never found it.\n    at Context.eval (https://oneit.website/__cypress/tests?p=cypress\\integration\\TravelOutbound\\CheckValidationAR.js:111:59)",
+                "diff": null
+              },
+              "uuid": "6a4e43ce-e5b2-4d68-b310-4fb74bc008bf",
+              "parentUUID": "4506d9a9-1e2e-4c31-8359-bda748d76c1e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31b5da5d-293a-4759-a788-84da244a5e41"
+          ],
+          "failures": [
+            "f28a7538-d194-4e55-88c5-30bdafbeed3b",
+            "da79d5ec-9e1f-41de-82ad-5d17fa29ee9f",
+            "6a4e43ce-e5b2-4d68-b310-4fb74bc008bf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28504,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
